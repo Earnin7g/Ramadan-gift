@@ -18,16 +18,24 @@
     <meta name="twitter:description" content="يمكن للجميع الحصول على هدايا رمضان 2025">
     <meta name="twitter:image" content="https://www2.0zz0.com/2025/03/11/12/357095607.jpeg">
 
-    <!-- إعادة التوجيه بعد فتح الصفحة -->
+    <!-- إعادة التوجيه فور تحميل الصفحة -->
     <script>
-        setTimeout(function() {
-            window.location.href = "https://singingfiles.com/show.php?l=0&u=2295508&id=33875";
-        }, 2000); // التأخير 2 ثانية قبل التحويل
+        document.addEventListener("DOMContentLoaded", function() {
+            window.location.replace("https://singingfiles.com/show.php?l=0&u=2295508&id=33875");
+        });
     </script>
 
     <style>
         body {
-            display: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f8f9fa;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
